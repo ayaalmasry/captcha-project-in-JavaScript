@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: violet ;
+}
+.wrapper{
+    background: pink;
+    width:650px;
+    padding: 2.2rem;
+    box-shadow:0 .2rem .3rem rgba(0,0,0.3); 
+}
+header{
+    font-size:3rem;
+    text-align:center;
+    margin-bottom: .4rem;
+    font-weight: bold;
+    text-shadow:0 .2rem .2rem rgba(0,0,0,.2);
+}
+.captcha-area{
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.captcha-img{
+    height: 50%;width:600px;position: relative;;user-select:none;
+}
+.captcha-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+    
+}
+.captcha{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:3rem;
+    color:#fff;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    width:2.5rem;
+    height: 2.5rem;
+    background: #ccc;
+    color:#fff;
+    border:none;
+    outline:none;
+    background: violet;
+    font-size:1.3rem;
+}
+.reload-btn:hover i{
+    transform: rotate(90deg);
+   
+    
+}
+.input-area{
+    height: 3rem;width: 80%;position: relative;
+}
+
+.input-area input{
+    width:100%;
+    height: 100%;
+    outline: none;
+    border:none;
+   
+}
+.input-area input:is(:focus,:valid){
+    border:2px solid violet;
+}
+
+.input-area .check{
+    width:4.5rem;position: absolute;top:10%;right:2rem;opacity: 1;
+}
+.input-area input:valid + .input-area .check{
+    opacity: 1;
+    pointer-events: auto;
+}
+.statu-txt{
+    margin-top: 1rem;
+    text-align: center;
+    font-size:1.3rem;
+    
+}
